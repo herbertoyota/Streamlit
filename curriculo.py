@@ -13,7 +13,7 @@ import worldbank
 st.set_page_config(layout="wide")
 
 # Barra lateral para navegação
-st.sidebar.image('image.png')
+st.sidebar.image('image.png',width=200)
 st.sidebar.title("Herbert Toyota")
 st.sidebar.write("Select a section to browse the portfolio:")
 
@@ -32,16 +32,15 @@ def mostrar_secao(secao):
         with col1:
             # Texto à esquerda com espaçamento ajustado entre linhas
             st.title("About")
-            st.markdown(
+            st.write(
                 """
-                <p style='text-align: justify; line-height: 1.3; max-width: 300px;'>
                     I am graduated in Business Administration at UNICAMP.
                     During my time at the university, I dedicated time to volunteer teaching, helping students prepare for high school by guiding them in mathematics.<br><br>
                     I also completed a 1 month an exchange program in Fort Lauderdale to improve my English skills, enhancing my experience in international environments.<br><br>
                     In addition, my experience includes working in finance and risk departments, where I honed my skills in analyzing financial data, creating indicators for the risk department, and automating tasks.<br><br>
                     Currently, I am advancing my technical expertise in data analysis, automation, and artificial intelligence.
                     Through this portfolio, I aim to showcase my technical skills and dedication to my professional growth.
-                </p>
+                
                 """, 
                 unsafe_allow_html=True
             )
